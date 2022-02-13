@@ -18,7 +18,6 @@ class ViewController: UIViewController {
     @IBOutlet var idTxtField: UITextField!
     @IBOutlet var image: UIImageView?
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,7 +29,6 @@ class ViewController: UIViewController {
         fetchCharacter()
 //        fetchLocation()
 //        fetchEpisod()
-
 
     }
     @objc private func resign() {
@@ -45,7 +43,7 @@ class ViewController: UIViewController {
             .eraseToAnyPublisher()
     }
 
-    private func load(url: URL) {
+    private func loadImageFrom(url: URL) {
         URLSession.shared
             .dataTaskPublisher(for: url)
             .map { UIImage(data: $0.data) }
@@ -71,7 +69,7 @@ class ViewController: UIViewController {
                 self?.descriptionLbl.text! = value.description
 
                 if let url = URL(string: value.image) {
-                    self?.load(url: url)
+                    self?.loadImageFrom(url: url)
                     if let charImage = self?.characterimage {
                         self?.image?.image = charImage
                     }
