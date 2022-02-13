@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CombainNetworking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HeU-7e-Rho">
+                                <rect key="frame" x="7" y="464" width="400" height="400"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enq-Rn-sjn">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w3S-rv-ddx" userLabel="Content View">
+                                                <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6K-Go-FmO">
+                                                        <rect key="frame" x="10" y="0.0" width="380" height="0.0"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.67159920930000006" green="0.7201048136" blue="0.78432381149999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstItem="J6K-Go-FmO" firstAttribute="top" secondItem="w3S-rv-ddx" secondAttribute="top" id="1Db-lT-ZTN"/>
+                                                    <constraint firstAttribute="trailing" secondItem="J6K-Go-FmO" secondAttribute="trailing" constant="10" id="T4W-rU-PTk"/>
+                                                    <constraint firstItem="J6K-Go-FmO" firstAttribute="leading" secondItem="w3S-rv-ddx" secondAttribute="leading" constant="10" id="aXz-qD-3Ah"/>
+                                                    <constraint firstAttribute="height" constant="600" id="rKz-gs-zoN"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="w3S-rv-ddx" firstAttribute="trailing" secondItem="6kJ-8c-n9t" secondAttribute="trailing" id="6WY-QI-bef"/>
+                                            <constraint firstItem="6kJ-8c-n9t" firstAttribute="leading" secondItem="w3S-rv-ddx" secondAttribute="leading" id="WBU-Lu-MGN"/>
+                                            <constraint firstItem="w3S-rv-ddx" firstAttribute="width" secondItem="Dp3-eP-esG" secondAttribute="width" id="ZlE-yb-Yqu"/>
+                                            <constraint firstItem="w3S-rv-ddx" firstAttribute="top" secondItem="6kJ-8c-n9t" secondAttribute="top" id="Zlz-IK-Byw"/>
+                                            <constraint firstItem="w3S-rv-ddx" firstAttribute="bottom" secondItem="6kJ-8c-n9t" secondAttribute="bottom" id="chw-tH-9zL"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="6kJ-8c-n9t"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="Dp3-eP-esG"/>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="8uG-mt-GzM"/>
+                                    <constraint firstItem="enq-Rn-sjn" firstAttribute="leading" secondItem="HeU-7e-Rho" secondAttribute="leading" id="KP2-bO-O4I"/>
+                                    <constraint firstItem="enq-Rn-sjn" firstAttribute="top" secondItem="HeU-7e-Rho" secondAttribute="top" id="Rq3-qZ-MIZ"/>
+                                    <constraint firstAttribute="width" constant="400" id="eFl-2V-FhL"/>
+                                    <constraint firstAttribute="bottom" secondItem="enq-Rn-sjn" secondAttribute="bottom" id="jOy-fU-zep"/>
+                                    <constraint firstAttribute="trailing" secondItem="enq-Rn-sjn" secondAttribute="trailing" id="vl2-Ie-sQJ"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3wq-Id-5pO">
+                                <rect key="frame" x="30" y="234" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Nqr-ZR-WM7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill.questionmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="CnH-uF-4cY">
+                                <rect key="frame" x="132" y="304.5" width="150" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="IZn-Iy-mdu"/>
+                                    <constraint firstAttribute="width" secondItem="CnH-uF-4cY" secondAttribute="height" multiplier="1:1" id="J8q-dX-YQx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="HeU-7e-Rho" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="200" id="0Va-hJ-75F"/>
+                            <constraint firstItem="CnH-uF-4cY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E9f-7A-Ncb"/>
+                            <constraint firstItem="3wq-Id-5pO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="GZF-Hb-bsO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3wq-Id-5pO" secondAttribute="trailing" constant="10" id="I1W-i7-iKt"/>
+                            <constraint firstItem="3wq-Id-5pO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="190" id="W0R-3x-bbB"/>
+                            <constraint firstItem="HeU-7e-Rho" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ePX-HG-zez"/>
+                            <constraint firstItem="HeU-7e-Rho" firstAttribute="top" secondItem="3wq-Id-5pO" secondAttribute="bottom" constant="180" id="ouU-YG-uLF"/>
+                            <constraint firstItem="CnH-uF-4cY" firstAttribute="top" secondItem="3wq-Id-5pO" secondAttribute="bottom" constant="20" id="rRg-ls-SOB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLbl" destination="J6K-Go-FmO" id="ueE-0r-I5F"/>
+                        <outlet property="idTxtField" destination="3wq-Id-5pO" id="mHF-6y-WKl"/>
+                        <outlet property="image" destination="CnH-uF-4cY" id="zZ7-zT-XX3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="35"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.fill.questionmark" catalog="system" width="128" height="104"/>
+    </resources>
+</document>
