@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Character: Codable {
+struct Character: Codable {
     var description: String {
 """
         self.id = \(id)
@@ -20,15 +20,15 @@ public struct Character: Codable {
 """
     }
 
-    public var id: Int64
-    public var name: String
-    public var status: String
-    public var species: String
-    public var type: String
-    public var gender: String
-    public var image: String
+    var id: Int64
+    var name: String
+    var status: String
+    var species: String
+    var type: String
+    var gender: String
+    var image: String
 
-    public init(id: Int64, name: String, status: String, species: String, type: String, gender: String, image: String) {
+    init(id: Int64, name: String, status: String, species: String, type: String, gender: String, image: String) {
         self.id = id
         self.name = name
         self.status = status
