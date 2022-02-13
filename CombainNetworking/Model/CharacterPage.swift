@@ -7,12 +7,12 @@
 
 import Foundation
 
-public struct CharacterPage: Codable {
+struct CharacterPage: Codable {
 
-    public var info: PageInfo
-    public var results: [Character]
+    var info: PageInfo
+    var results: [Character]
 
-    public init(info: PageInfo, results: [Character]) {
+    init(info: PageInfo, results: [Character]) {
         self.info = info
         self.results = results
     }
